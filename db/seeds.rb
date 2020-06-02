@@ -9,9 +9,8 @@
 # actor = Actor.new({first_name: "Benedict", last_name: "Cumberbatch", known_for: "Sherlock"})
 # actor.save
 
-require "ffaker"
 
-actor = Actor.new(first_name: FFaker::Name.first_name, last_name: FFaker::Name.last_name, known_for: FFaker::Movie.title)
-actor.save
+# actor = Actor.new(first_name: "Paul", last_name: "Rudd", known_for: "Ant Man")
+# actor.save
 
 # movie = Movie.create(title: "Jurassic Park", year: 1993, plot: "Don't mess with nature.")
