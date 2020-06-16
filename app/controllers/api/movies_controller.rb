@@ -4,12 +4,12 @@ class Api::MoviesController < ApplicationController
   
   def index
     @movies = Movie.where(english: true)
-    render "movie_index.json.jb"
+    render "index.json.jb"
   end
 
   def show
     @movie = Movie.find_by(id: params[:id])
-    render "movie_show.json.jb"
+    render "show.json.jb"
   end
 
   def create
@@ -21,7 +21,7 @@ class Api::MoviesController < ApplicationController
       english: params[:english]
     )
     if @movie.save
-      render "movie_show.json.jb"
+      render "show.json.jb"
     else
       render json: {message: @movie.errors.full_messages}, status: :unprocessable_entity
     end
@@ -35,7 +35,7 @@ class Api::MoviesController < ApplicationController
     @movie.director = params[:director] || @movie.director
     @movie.english = params[:english] || @movie.english
     if @movie.save
-      render "movie_show.json.jb"
+      render "show.json.jb"
     else
       render json: {message: @movie.errors.full_messages}, status: :unprocessable_entity
     end

@@ -14,3 +14,17 @@
 # actor.save
 
 # movie = Movie.create(title: "Jurassic Park", year: 1993, plot: "Don't mess with nature.")
+
+# Genre.create(name: "Romance")
+# Genre.create(name: "Comedy")
+# Genre.create(name: "Thriller")
+# Genre.create(name: "Drama")
+
+# MovieGenre.create(genre_id: 2, movie_id: 1)
+# MovieGenre.create(genre_id: 2, movie_id: 2)
+# MovieGenre.create(genre_id: 2, movie_id: 3)
+# MovieGenre.create(genre_id: 3, movie_id: 4)
+# MovieGenre.create(genre_id: 4, movie_id: 6)
+# MovieGenre.create(genre_id: 1, movie_id: 6)
+# MovieGenre.create(genre_id: 3, movie_id: 5)
+# MovieGenre.create(genre_id: 3, movie_id: 1)
