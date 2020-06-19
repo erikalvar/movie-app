@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test</title>
+</head>
+<body>
+  <h1><%= @movie.title %></h1>
+  <div>
+    <h3>Year: <%= @movie.year%></h3>
+    <h3>Director: <%= @movie.director%></h3>
+    <h3>Plot: <%= @movie.plot%></h3>
+    <h3><In English: %= @movie.english%></h3>
+  </div>
+
+  <div>
+    <a href="http://imdb.com" target="_blank">Find it on IMDB!</a>
+  </div>
+
+  <div>
+    You're rating:
+    <select id="cars" name="cars">
+    <option value="5">Love it!</option>
+    <option value="4">Enjoyed</option>
+    <option value="3">So-so</option>
+    <option value="2">Hated it</option>
+    <option value="1">Total waste of time...</option>
+    </select>
+    <button value="submit">Submit</button>
+  </div>
+  
+</body>
+</html>
+
+
